@@ -13,8 +13,17 @@ function contar(){
         var f = Number(fim.value)
         var p = Number(passo.value)
 
+        if(i < f){
         for(var c = i; c <= f; c += p){
             res.innerHTML += `${c} \u{1f449}`
+            }
+        }else{
+            for(var c = i; c >=f; c -= p){
+                res.innerHTML += `${c} \u{1f449}`
+                
+            }
         }
+
+        res.innerHTML += '\u{1F3C1}'
     }
 }
